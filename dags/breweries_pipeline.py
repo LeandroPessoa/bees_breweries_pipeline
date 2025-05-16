@@ -57,7 +57,7 @@ with DAG(
         task_id="validate_bronze_data",
         python_callable=validate_bronze_data,
         op_kwargs={"execution_date": "{{ ds | replace('-', '') }}"},
-        retries=0,
+        retries=1,
         depends_on_past=False,
     )
 
@@ -72,7 +72,7 @@ with DAG(
         task_id="validate_silver_data",
         python_callable=validate_silver_data,
         op_kwargs={"execution_date": "{{ ds | replace('-', '') }}"},
-        retries=0,
+        retries=1,
         depends_on_past=False,
     )
 
@@ -87,7 +87,7 @@ with DAG(
         task_id="validate_gold_data",
         python_callable=validate_gold_data,
         op_kwargs={"execution_date": "{{ ds | replace('-', '') }}"},
-        retries=0,
+        retries=1,
         depends_on_past=False,
     )
 
