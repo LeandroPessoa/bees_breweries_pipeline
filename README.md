@@ -48,6 +48,15 @@ Este projeto implementa um pipeline de ingestão, transformação e agregação 
 ```bash
 docker network create airflow-net
 docker-compose up --build
+
+
+docker-compose run --rm airflow-webserver airflow db init
+docker-compose run --rm airflow-webserver airflow users create \
+    --username admin --password admin \
+    --firstname Admin --lastname User \
+    --role Admin --email admin@example.com
+
+
 ```
 
 > Aguarde a criação da infraestrutura: Airflow, Redis, Postgres, MinIO, LocalStack.

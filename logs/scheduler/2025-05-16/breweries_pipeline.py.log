@@ -333,3 +333,20 @@ Please take a look at these docs to improve your DAG import time:
 [2025-05-16T00:22:15.602+0000] {logging_mixin.py:188} INFO - [2025-05-16T00:22:15.601+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-05-16T00:22:15.664+0000] {logging_mixin.py:188} INFO - [2025-05-16T00:22:15.663+0000] {dag.py:3823} INFO - Setting next_dagrun for breweries_etl_pipeline to 2025-05-16 00:00:00+00:00, run_after=2025-05-17 00:00:00+00:00
 [2025-05-16T00:22:16.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/breweries_pipeline.py took 3.177 seconds
+[2025-05-16T09:02:51.359+0000] {processor.py:161} INFO - Started process (PID=33) to work on /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:02:51.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/breweries_pipeline.py for tasks to queue
+[2025-05-16T09:02:51.366+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:02:51.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:03:03.701+0000] {logging_mixin.py:188} INFO - ⚠️ Erro ao obter /datalake/bronze_path do SSM: Could not connect to the endpoint URL: "http://localstack:4566/"
+[2025-05-16T09:03:03.703+0000] {logging_mixin.py:188} INFO - ➡️ Usando valor padrão: s3a://bronze
+[2025-05-16T09:03:10.495+0000] {logging_mixin.py:188} INFO - ⚠️ Erro ao obter /datalake/silver_path do SSM: Could not connect to the endpoint URL: "http://localstack:4566/"
+[2025-05-16T09:03:10.502+0000] {logging_mixin.py:188} INFO - ➡️ Usando valor padrão: s3a://silver
+[2025-05-16T09:03:18.704+0000] {logging_mixin.py:188} INFO - ⚠️ Erro ao obter /datalake/gold_path do SSM: Could not connect to the endpoint URL: "http://localstack:4566/"
+[2025-05-16T09:03:18.707+0000] {logging_mixin.py:188} INFO - ➡️ Usando valor padrão: s3a://gold
+[2025-05-16T09:03:18.761+0000] {processor.py:840} INFO - DAG(s) 'breweries_etl_pipeline' retrieved from /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:03:18.992+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:18.992+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:breweries_etl_pipeline
+[2025-05-16T09:03:19.001+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.000+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:breweries_etl_pipeline
+[2025-05-16T09:03:19.006+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.006+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:breweries_etl_pipeline
+[2025-05-16T09:03:19.006+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.006+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-05-16T09:03:19.017+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.017+0000] {dag.py:3058} INFO - Creating ORM DAG for breweries_etl_pipeline
+[2025-05-16T09:03:19.029+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.028+0000] {dag.py:3823} INFO - Setting next_dagrun for breweries_etl_pipeline to 2025-05-15 00:00:00+00:00, run_after=2025-05-16 00:00:00+00:00
+[2025-05-16T09:03:19.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/breweries_pipeline.py took 27.691 seconds
