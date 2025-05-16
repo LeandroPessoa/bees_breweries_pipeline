@@ -1,5 +1,26 @@
 # 🍺 BEES – Desafio Técnico de Engenharia de Dados
 
+## 📘 Visão Geral do Projeto
+
+Este projeto foi desenvolvido como parte de um desafio técnico para a área de Engenharia de Dados na BEES. Seu objetivo é demonstrar a capacidade de construir uma pipeline de dados robusta, modular e escalável utilizando tecnologias amplamente adotadas no mercado.
+
+A pipeline implementa um fluxo completo de dados que abrange:
+
+- Extração de dados públicos a partir da **API Open Brewery DB**;
+- Armazenamento dos dados brutos (camada **Bronze**) em um data lake simulado com o **MinIO**;
+- Transformação e limpeza dos dados com **Apache Spark** e persistência como **tabelas Delta** (camada **Silver**);
+- Agregações analíticas para criação de uma visão de negócio (camada **Gold**), também armazenada em formato Delta;
+- Validações automáticas em cada etapa para garantir qualidade, formato e consistência dos dados.
+
+Além disso, a solução é **totalmente containerizada** com **Docker Compose**, permitindo fácil execução local com componentes como Airflow, Spark, MinIO e LocalStack.
+
+O projeto segue o padrão **Medallion Architecture** e foi desenvolvido com foco em:
+
+- Clareza de código e modularização
+- Observabilidade e reprocessamento por data
+- Facilidade de testes unitários
+- Expansibilidade futura para ferramentas de Data Quality (ex: Great Expectations) e de consulta (ex: Trino)
+
 Este projeto implementa um pipeline de ingestão, transformação e agregação de dados da [Open Brewery DB](https://www.openbrewerydb.org/), utilizando **Apache Airflow**, **Spark com Delta Lake**, **MinIO** como data lake e **LocalStack** para simulação de serviços AWS (SSM). A arquitetura segue o padrão **Medallion** (Bronze, Silver, Gold).
 
 ---
