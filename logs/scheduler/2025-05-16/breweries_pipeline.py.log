@@ -350,3 +350,23 @@ Please take a look at these docs to improve your DAG import time:
 [2025-05-16T09:03:19.017+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.017+0000] {dag.py:3058} INFO - Creating ORM DAG for breweries_etl_pipeline
 [2025-05-16T09:03:19.029+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:19.028+0000] {dag.py:3823} INFO - Setting next_dagrun for breweries_etl_pipeline to 2025-05-15 00:00:00+00:00, run_after=2025-05-16 00:00:00+00:00
 [2025-05-16T09:03:19.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/breweries_pipeline.py took 27.691 seconds
+[2025-05-16T09:03:49.327+0000] {processor.py:161} INFO - Started process (PID=35) to work on /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:03:49.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/breweries_pipeline.py for tasks to queue
+[2025-05-16T09:03:49.332+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:49.332+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:03:50.483+0000] {logging_mixin.py:188} INFO - ✔️ /datalake/bronze_path = s3a://bronze
+[2025-05-16T09:03:50.493+0000] {logging_mixin.py:188} INFO - ✔️ /datalake/silver_path = s3a://silver
+[2025-05-16T09:03:50.501+0000] {logging_mixin.py:188} INFO - ✔️ /datalake/gold_path = s3a://gold
+[2025-05-16T09:03:50.518+0000] {processor.py:840} INFO - DAG(s) 'breweries_etl_pipeline' retrieved from /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:03:50.576+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:50.575+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-05-16T09:03:50.603+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:03:50.603+0000] {dag.py:3823} INFO - Setting next_dagrun for breweries_etl_pipeline to 2025-05-15 00:00:00+00:00, run_after=2025-05-16 00:00:00+00:00
+[2025-05-16T09:03:50.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/breweries_pipeline.py took 1.294 seconds
+[2025-05-16T09:04:20.726+0000] {processor.py:161} INFO - Started process (PID=37) to work on /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:04:20.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/breweries_pipeline.py for tasks to queue
+[2025-05-16T09:04:20.731+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:04:20.731+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:04:21.544+0000] {logging_mixin.py:188} INFO - ✔️ /datalake/bronze_path = s3a://bronze
+[2025-05-16T09:04:21.553+0000] {logging_mixin.py:188} INFO - ✔️ /datalake/silver_path = s3a://silver
+[2025-05-16T09:04:21.562+0000] {logging_mixin.py:188} INFO - ✔️ /datalake/gold_path = s3a://gold
+[2025-05-16T09:04:21.569+0000] {processor.py:840} INFO - DAG(s) 'breweries_etl_pipeline' retrieved from /opt/airflow/dags/breweries_pipeline.py
+[2025-05-16T09:04:21.599+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:04:21.598+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-05-16T09:04:21.612+0000] {logging_mixin.py:188} INFO - [2025-05-16T09:04:21.612+0000] {dag.py:3823} INFO - Setting next_dagrun for breweries_etl_pipeline to 2025-05-15 00:00:00+00:00, run_after=2025-05-16 00:00:00+00:00
+[2025-05-16T09:04:21.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/breweries_pipeline.py took 0.906 seconds

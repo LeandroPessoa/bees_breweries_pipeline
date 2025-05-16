@@ -65,7 +65,7 @@ docker-compose run --rm airflow-webserver airflow users create \
 
 | Serviço       | URL                         | Login  | Senha      |
 |---------------|------------------------------|--------|------------|
-| Airflow       | http://localhost:8080        | admin  | admin123   |
+| Airflow       | http://localhost:8080        | admin  | admin   |
 | MinIO Console | http://localhost:9001        | admin  | admin123   |
 
 ---
