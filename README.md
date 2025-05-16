@@ -136,12 +136,14 @@ docker-compose exec airflow-webserver pytest dags/tests/
 
 ---
 
-## 💡 Decisões Técnicas
+## 💡 Decisões Técnicas e considerações
 
 - **MinIO** foi utilizado para simular um data lake compatível com S3, permitindo testes locais.
 - **Spark** foi escolhido pela escalabilidade e compatibilidade com Delta Lake.
 - **LocalStack** permite simulação de SSM para carregar dinamicamente os paths dos buckets.
 - Todas as etapas são **idempotentes** e podem ser reexecutadas com segurança por data.
+- O uso de um motor de consulta sql como o Trino poderia ser usado para disponibilizar os dados em plataformas de BI/Data Visualization.
+- O uso de Great Expectations, embora recomendável, não foi utilizado no projeto.
 
 ---
 
