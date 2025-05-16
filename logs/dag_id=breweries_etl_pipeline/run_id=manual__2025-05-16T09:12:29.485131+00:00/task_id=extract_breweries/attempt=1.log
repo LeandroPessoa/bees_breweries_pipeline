@@ -1,0 +1,61 @@
+[2025-05-16T09:12:31.485+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: breweries_etl_pipeline.extract_breweries manual__2025-05-16T09:12:29.485131+00:00 [queued]>
+[2025-05-16T09:12:31.492+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: breweries_etl_pipeline.extract_breweries manual__2025-05-16T09:12:29.485131+00:00 [queued]>
+[2025-05-16T09:12:31.493+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 6
+[2025-05-16T09:12:31.510+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_breweries> on 2025-05-16 09:12:29.485131+00:00
+[2025-05-16T09:12:31.525+0000] {standard_task_runner.py:60} INFO - Started process 117 to run task
+[2025-05-16T09:12:31.528+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'breweries_etl_pipeline', 'extract_breweries', 'manual__2025-05-16T09:12:29.485131+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/breweries_pipeline.py', '--cfg-path', '/tmp/tmp4ws7kstd']
+[2025-05-16T09:12:31.530+0000] {standard_task_runner.py:88} INFO - Job 18: Subtask extract_breweries
+[2025-05-16T09:12:31.544+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-05-16T09:12:31.581+0000] {task_command.py:423} INFO - Running <TaskInstance: breweries_etl_pipeline.extract_breweries manual__2025-05-16T09:12:29.485131+00:00 [running]> on host 9264811a0e0a
+[2025-05-16T09:12:31.648+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='breweries_etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_breweries' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T09:12:29.485131+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T09:12:29.485131+00:00'
+[2025-05-16T09:12:31.649+0000] {logging_mixin.py:188} INFO - 🔹 Iniciando extração de dados da API Open Brewery DB
+[2025-05-16T09:12:31.825+0000] {logging_mixin.py:188} INFO - ✔️ Página 1 extraída com 200 registros
+[2025-05-16T09:12:31.987+0000] {logging_mixin.py:188} INFO - ✔️ Página 2 extraída com 200 registros
+[2025-05-16T09:12:32.232+0000] {logging_mixin.py:188} INFO - ✔️ Página 3 extraída com 200 registros
+[2025-05-16T09:12:32.503+0000] {logging_mixin.py:188} INFO - ✔️ Página 4 extraída com 200 registros
+[2025-05-16T09:12:32.776+0000] {logging_mixin.py:188} INFO - ✔️ Página 5 extraída com 200 registros
+[2025-05-16T09:12:32.975+0000] {logging_mixin.py:188} INFO - ✔️ Página 6 extraída com 200 registros
+[2025-05-16T09:12:33.280+0000] {logging_mixin.py:188} INFO - ✔️ Página 7 extraída com 200 registros
+[2025-05-16T09:12:33.469+0000] {logging_mixin.py:188} INFO - ✔️ Página 8 extraída com 200 registros
+[2025-05-16T09:12:33.673+0000] {logging_mixin.py:188} INFO - ✔️ Página 9 extraída com 200 registros
+[2025-05-16T09:12:33.848+0000] {logging_mixin.py:188} INFO - ✔️ Página 10 extraída com 200 registros
+[2025-05-16T09:12:34.050+0000] {logging_mixin.py:188} INFO - ✔️ Página 11 extraída com 200 registros
+[2025-05-16T09:12:34.242+0000] {logging_mixin.py:188} INFO - ✔️ Página 12 extraída com 200 registros
+[2025-05-16T09:12:34.472+0000] {logging_mixin.py:188} INFO - ✔️ Página 13 extraída com 200 registros
+[2025-05-16T09:12:34.661+0000] {logging_mixin.py:188} INFO - ✔️ Página 14 extraída com 200 registros
+[2025-05-16T09:12:34.921+0000] {logging_mixin.py:188} INFO - ✔️ Página 15 extraída com 200 registros
+[2025-05-16T09:12:35.106+0000] {logging_mixin.py:188} INFO - ✔️ Página 16 extraída com 200 registros
+[2025-05-16T09:12:35.391+0000] {logging_mixin.py:188} INFO - ✔️ Página 17 extraída com 200 registros
+[2025-05-16T09:12:35.644+0000] {logging_mixin.py:188} INFO - ✔️ Página 18 extraída com 200 registros
+[2025-05-16T09:12:35.906+0000] {logging_mixin.py:188} INFO - ✔️ Página 19 extraída com 200 registros
+[2025-05-16T09:12:36.178+0000] {logging_mixin.py:188} INFO - ✔️ Página 20 extraída com 200 registros
+[2025-05-16T09:12:36.360+0000] {logging_mixin.py:188} INFO - ✔️ Página 21 extraída com 200 registros
+[2025-05-16T09:12:36.640+0000] {logging_mixin.py:188} INFO - ✔️ Página 22 extraída com 200 registros
+[2025-05-16T09:12:36.845+0000] {logging_mixin.py:188} INFO - ✔️ Página 23 extraída com 200 registros
+[2025-05-16T09:12:37.023+0000] {logging_mixin.py:188} INFO - ✔️ Página 24 extraída com 200 registros
+[2025-05-16T09:12:37.253+0000] {logging_mixin.py:188} INFO - ✔️ Página 25 extraída com 200 registros
+[2025-05-16T09:12:37.440+0000] {logging_mixin.py:188} INFO - ✔️ Página 26 extraída com 200 registros
+[2025-05-16T09:12:37.686+0000] {logging_mixin.py:188} INFO - ✔️ Página 27 extraída com 200 registros
+[2025-05-16T09:12:37.874+0000] {logging_mixin.py:188} INFO - ✔️ Página 28 extraída com 200 registros
+[2025-05-16T09:12:38.112+0000] {logging_mixin.py:188} INFO - ✔️ Página 29 extraída com 200 registros
+[2025-05-16T09:12:38.374+0000] {logging_mixin.py:188} INFO - ✔️ Página 30 extraída com 200 registros
+[2025-05-16T09:12:38.563+0000] {logging_mixin.py:188} INFO - ✔️ Página 31 extraída com 200 registros
+[2025-05-16T09:12:38.791+0000] {logging_mixin.py:188} INFO - ✔️ Página 32 extraída com 200 registros
+[2025-05-16T09:12:38.970+0000] {logging_mixin.py:188} INFO - ✔️ Página 33 extraída com 200 registros
+[2025-05-16T09:12:39.155+0000] {logging_mixin.py:188} INFO - ✔️ Página 34 extraída com 200 registros
+[2025-05-16T09:12:39.398+0000] {logging_mixin.py:188} INFO - ✔️ Página 35 extraída com 200 registros
+[2025-05-16T09:12:39.643+0000] {logging_mixin.py:188} INFO - ✔️ Página 36 extraída com 200 registros
+[2025-05-16T09:12:39.840+0000] {logging_mixin.py:188} INFO - ✔️ Página 37 extraída com 200 registros
+[2025-05-16T09:12:40.052+0000] {logging_mixin.py:188} INFO - ✔️ Página 38 extraída com 200 registros
+[2025-05-16T09:12:40.310+0000] {logging_mixin.py:188} INFO - ✔️ Página 39 extraída com 200 registros
+[2025-05-16T09:12:40.478+0000] {logging_mixin.py:188} INFO - ✔️ Página 40 extraída com 200 registros
+[2025-05-16T09:12:40.795+0000] {logging_mixin.py:188} INFO - ✔️ Página 41 extraída com 200 registros
+[2025-05-16T09:12:40.965+0000] {logging_mixin.py:188} INFO - ✔️ Página 42 extraída com 170 registros
+[2025-05-16T09:12:41.463+0000] {logging_mixin.py:188} INFO - 📤 Enviado para S3: s3://bronze/breweries_raw_20250516.json
+[2025-05-16T09:12:41.465+0000] {logging_mixin.py:188} INFO - ✅ Extração concluída. Total de registros: 8370
+[2025-05-16T09:12:41.473+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-05-16T09:12:41.492+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=breweries_etl_pipeline, task_id=extract_breweries, execution_date=20250516T091229, start_date=20250516T091231, end_date=20250516T091241
+[2025-05-16T09:12:41.580+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-05-16T09:12:41.628+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

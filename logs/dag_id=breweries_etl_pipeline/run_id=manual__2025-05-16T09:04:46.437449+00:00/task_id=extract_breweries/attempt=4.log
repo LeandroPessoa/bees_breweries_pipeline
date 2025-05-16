@@ -1,0 +1,156 @@
+[2025-05-16T09:09:39.408+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: breweries_etl_pipeline.extract_breweries manual__2025-05-16T09:04:46.437449+00:00 [queued]>
+[2025-05-16T09:09:39.418+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: breweries_etl_pipeline.extract_breweries manual__2025-05-16T09:04:46.437449+00:00 [queued]>
+[2025-05-16T09:09:39.418+0000] {taskinstance.py:2170} INFO - Starting attempt 4 of 6
+[2025-05-16T09:09:39.429+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_breweries> on 2025-05-16 09:04:46.437449+00:00
+[2025-05-16T09:09:39.439+0000] {standard_task_runner.py:60} INFO - Started process 56 to run task
+[2025-05-16T09:09:39.455+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'breweries_etl_pipeline', 'extract_breweries', 'manual__2025-05-16T09:04:46.437449+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/breweries_pipeline.py', '--cfg-path', '/tmp/tmp1i3y3wd2']
+[2025-05-16T09:09:39.459+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask extract_breweries
+[2025-05-16T09:09:39.485+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-05-16T09:09:39.523+0000] {task_command.py:423} INFO - Running <TaskInstance: breweries_etl_pipeline.extract_breweries manual__2025-05-16T09:04:46.437449+00:00 [running]> on host 9264811a0e0a
+[2025-05-16T09:09:39.645+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='breweries_etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_breweries' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T09:04:46.437449+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T09:04:46.437449+00:00'
+[2025-05-16T09:09:39.648+0000] {logging_mixin.py:188} INFO - 🔹 Iniciando extração de dados da API Open Brewery DB
+[2025-05-16T09:09:39.905+0000] {logging_mixin.py:188} INFO - ✔️ Página 1 extraída com 200 registros
+[2025-05-16T09:09:40.146+0000] {logging_mixin.py:188} INFO - ✔️ Página 2 extraída com 200 registros
+[2025-05-16T09:09:40.360+0000] {logging_mixin.py:188} INFO - ✔️ Página 3 extraída com 200 registros
+[2025-05-16T09:09:40.512+0000] {logging_mixin.py:188} INFO - ✔️ Página 4 extraída com 200 registros
+[2025-05-16T09:09:40.742+0000] {logging_mixin.py:188} INFO - ✔️ Página 5 extraída com 200 registros
+[2025-05-16T09:09:40.965+0000] {logging_mixin.py:188} INFO - ✔️ Página 6 extraída com 200 registros
+[2025-05-16T09:09:41.184+0000] {logging_mixin.py:188} INFO - ✔️ Página 7 extraída com 200 registros
+[2025-05-16T09:09:41.337+0000] {logging_mixin.py:188} INFO - ✔️ Página 8 extraída com 200 registros
+[2025-05-16T09:09:41.502+0000] {logging_mixin.py:188} INFO - ✔️ Página 9 extraída com 200 registros
+[2025-05-16T09:09:41.684+0000] {logging_mixin.py:188} INFO - ✔️ Página 10 extraída com 200 registros
+[2025-05-16T09:09:41.895+0000] {logging_mixin.py:188} INFO - ✔️ Página 11 extraída com 200 registros
+[2025-05-16T09:09:42.168+0000] {logging_mixin.py:188} INFO - ✔️ Página 12 extraída com 200 registros
+[2025-05-16T09:09:42.330+0000] {logging_mixin.py:188} INFO - ✔️ Página 13 extraída com 200 registros
+[2025-05-16T09:09:42.532+0000] {logging_mixin.py:188} INFO - ✔️ Página 14 extraída com 200 registros
+[2025-05-16T09:09:42.764+0000] {logging_mixin.py:188} INFO - ✔️ Página 15 extraída com 200 registros
+[2025-05-16T09:09:42.931+0000] {logging_mixin.py:188} INFO - ✔️ Página 16 extraída com 200 registros
+[2025-05-16T09:09:43.157+0000] {logging_mixin.py:188} INFO - ✔️ Página 17 extraída com 200 registros
+[2025-05-16T09:09:43.310+0000] {logging_mixin.py:188} INFO - ✔️ Página 18 extraída com 200 registros
+[2025-05-16T09:09:43.506+0000] {logging_mixin.py:188} INFO - ✔️ Página 19 extraída com 200 registros
+[2025-05-16T09:09:43.698+0000] {logging_mixin.py:188} INFO - ✔️ Página 20 extraída com 200 registros
+[2025-05-16T09:09:43.856+0000] {logging_mixin.py:188} INFO - ✔️ Página 21 extraída com 200 registros
+[2025-05-16T09:09:44.012+0000] {logging_mixin.py:188} INFO - ✔️ Página 22 extraída com 200 registros
+[2025-05-16T09:09:44.200+0000] {logging_mixin.py:188} INFO - ✔️ Página 23 extraída com 200 registros
+[2025-05-16T09:09:44.368+0000] {logging_mixin.py:188} INFO - ✔️ Página 24 extraída com 200 registros
+[2025-05-16T09:09:44.550+0000] {logging_mixin.py:188} INFO - ✔️ Página 25 extraída com 200 registros
+[2025-05-16T09:09:44.720+0000] {logging_mixin.py:188} INFO - ✔️ Página 26 extraída com 200 registros
+[2025-05-16T09:09:44.895+0000] {logging_mixin.py:188} INFO - ✔️ Página 27 extraída com 200 registros
+[2025-05-16T09:09:45.054+0000] {logging_mixin.py:188} INFO - ✔️ Página 28 extraída com 200 registros
+[2025-05-16T09:09:45.230+0000] {logging_mixin.py:188} INFO - ✔️ Página 29 extraída com 200 registros
+[2025-05-16T09:09:45.381+0000] {logging_mixin.py:188} INFO - ✔️ Página 30 extraída com 200 registros
+[2025-05-16T09:09:45.559+0000] {logging_mixin.py:188} INFO - ✔️ Página 31 extraída com 200 registros
+[2025-05-16T09:09:45.751+0000] {logging_mixin.py:188} INFO - ✔️ Página 32 extraída com 200 registros
+[2025-05-16T09:09:45.910+0000] {logging_mixin.py:188} INFO - ✔️ Página 33 extraída com 200 registros
+[2025-05-16T09:09:46.067+0000] {logging_mixin.py:188} INFO - ✔️ Página 34 extraída com 200 registros
+[2025-05-16T09:09:46.250+0000] {logging_mixin.py:188} INFO - ✔️ Página 35 extraída com 200 registros
+[2025-05-16T09:09:46.407+0000] {logging_mixin.py:188} INFO - ✔️ Página 36 extraída com 200 registros
+[2025-05-16T09:09:46.590+0000] {logging_mixin.py:188} INFO - ✔️ Página 37 extraída com 200 registros
+[2025-05-16T09:09:46.779+0000] {logging_mixin.py:188} INFO - ✔️ Página 38 extraída com 200 registros
+[2025-05-16T09:09:46.940+0000] {logging_mixin.py:188} INFO - ✔️ Página 39 extraída com 200 registros
+[2025-05-16T09:09:47.148+0000] {logging_mixin.py:188} INFO - ✔️ Página 40 extraída com 200 registros
+[2025-05-16T09:09:47.340+0000] {logging_mixin.py:188} INFO - ✔️ Página 41 extraída com 200 registros
+[2025-05-16T09:09:47.494+0000] {logging_mixin.py:188} INFO - ✔️ Página 42 extraída com 170 registros
+[2025-05-16T09:09:58.071+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 464, in send
+    urllib_response = conn.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/awsrequest.py", line 96, in request
+    rval = super().request(method, url, body, headers, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/awsrequest.py", line 123, in _send_output
+    self.send(msg)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/awsrequest.py", line 223, in send
+    return super().send(str)
+  File "/usr/local/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPConnection object at 0xffff885dd160>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/extract.py", line 38, in extract_breweries
+    upload_to_s3(
+  File "/opt/airflow/dags/src/s3_utils.py", line 26, in upload_to_s3
+    s3.put_object(Bucket=bucket, Key=key, Body=body)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 553, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 989, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 1015, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 202, in _send_request
+    while self._needs_retry(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 354, in _needs_retry
+    responses = self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 207, in __call__
+    if self._checker(**checker_kwargs):
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 284, in __call__
+    should_retry = self._should_retry(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 320, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 363, in __call__
+    checker_response = checker(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 247, in __call__
+    return self._check_caught_exception(
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/retryhandler.py", line 416, in _check_caught_exception
+    raise caught_exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 281, in _do_get_response
+    http_response = self._send(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 377, in _send
+    return self.http_session.send(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/httpsession.py", line 493, in send
+    raise EndpointConnectionError(endpoint_url=request.url, error=e)
+botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "http://minio:9000/bronze/breweries_raw_20250516.json"
+[2025-05-16T09:09:58.113+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=breweries_etl_pipeline, task_id=extract_breweries, execution_date=20250516T090446, start_date=20250516T090939, end_date=20250516T090958
+[2025-05-16T09:09:58.131+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 10 for task extract_breweries (Could not connect to the endpoint URL: "http://minio:9000/bronze/breweries_raw_20250516.json"; 56)
+[2025-05-16T09:09:58.168+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-05-16T09:09:58.197+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
