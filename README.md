@@ -47,7 +47,7 @@ Este projeto implementa um pipeline de ingestão, transformação e agregação 
 
 ```bash
 docker network create airflow-net
-docker-compose up --build
+docker-compose build
 
 
 docker-compose run --rm airflow-webserver airflow db init
