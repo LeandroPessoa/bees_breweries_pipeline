@@ -85,6 +85,10 @@ docker-compose up -d
 
 ### 3. Acessar interfaces
 
+# Acesse o MinIO Console e valide se os buckets bronze, silver e gold estao presentes, caso nao esteja os crie com as configurações básicas.
+
+# Acesse o Airflow e ative a dag.
+
 | Serviço       | URL                         | Login  | Senha      |
 |---------------|------------------------------|--------|------------|
 | Airflow       | http://localhost:8080        | admin  | admin   |
