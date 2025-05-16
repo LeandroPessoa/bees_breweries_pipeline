@@ -56,6 +56,7 @@ docker-compose run --rm airflow-webserver airflow users create \
     --firstname Admin --lastname User \
     --role Admin --email admin@example.com
 
+docker-compose up -d
 
 ```
 
