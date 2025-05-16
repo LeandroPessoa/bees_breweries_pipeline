@@ -46,6 +46,7 @@ Este projeto implementa um pipeline de ingestão, transformação e agregação 
 ### 2. Subir os containers
 
 ```bash
+docker network create airflow-net
 docker-compose up --build
 ```
 
